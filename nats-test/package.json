@@ -1,0 +1,23 @@
+{
+  "name": "nats-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "publish": "tsx watch src/publisher.ts",
+    "listen": "tsx watch src/listener.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "node-nats-streaming": "^0.3.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "tsx": "^4.23.13"
+  }
+}
