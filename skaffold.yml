@@ -3,7 +3,7 @@ kind: Config
 deploy:
   kubectl:
     manifests:
-      # infra location
+      # infra
       - ./infra/k8s/*
       - ./infra/k8s-dev/*
 build:
