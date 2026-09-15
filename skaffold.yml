@@ -4,6 +4,7 @@ deploy:
   kubectl:
     manifests:
       # infra location
+      - ./infra/k8s/*
       - ./infra/k8s-dev/*
 build:
   local:
