@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: www.ticketing-app-kube.online
+    - host: ticketing-app-kube.online
       http:
         paths:
           - path: /api/payments/?(.*)
