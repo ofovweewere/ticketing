@@ -13,12 +13,16 @@ import { showOrderRouter } from './routes/show.js'
 const app = express()
 app.set('trust proxy', true)
 app.use(bodyParser.json())
-app.use(
-  cookieSession({
-    signed: false,
-    secure: process.env.NODE_ENV !== 'test',
-  }),
-)
+// app.use(
+//   cookieSession({
+//     signed: false,
+//     secure: process.env.NODE_ENV !== 'test',
+//   }),
+// )
+cookieSession({
+  signed: false,
+  secure: false,
+})
 
 app.use(currentUser)
 app.use(morgan('dev'))
