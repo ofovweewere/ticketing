@@ -19,10 +19,12 @@ app.use(bodyParser.json())
 //     secure: process.env.NODE_ENV !== 'test',
 //   }),
 // )
-cookieSession({
-  signed: false,
-  secure: false,
-})
+app.use(
+  cookieSession({
+    signed: false,
+    secure: false,
+  }),
+)
 
 app.use(currentUser)
 app.use(morgan('dev'))
