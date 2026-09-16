@@ -47,6 +47,7 @@ spec:
                 port:
                   number: 3000
 ---
+# fix
 apiVersion: v1
 kind: Service
 metadata:
