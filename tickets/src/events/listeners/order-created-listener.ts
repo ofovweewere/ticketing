@@ -21,7 +21,6 @@ export class OrderCreatedListener extends Listener<OrderCreatedEvent> {
     // Save ticket
     await ticket.save()
 
-    const t = await Ticket.find({})
     await new TicketUpdatedPublisher(this.client).publish({
       id: ticket.id,
       price: ticket.price,

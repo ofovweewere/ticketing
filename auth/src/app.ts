@@ -32,7 +32,7 @@ app.use(signinRouter)
 app.use(signoutRouter)
 app.use(signupRouter)
 
-app.all('*', async (req, res) => {
+app.all('*', (req, res) => {
   throw new NotFoundError()
 })
 
