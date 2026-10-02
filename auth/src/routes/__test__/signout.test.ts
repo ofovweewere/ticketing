@@ -9,6 +9,7 @@ it('clears the cookies after signing out', async () => {
       password: 'password',
     })
     .expect(201)
+  // TODO: remove the above redundant? signup request
 
   const response = await request(app)
     .post('/api/users/signout')
